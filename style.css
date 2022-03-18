@@ -35,10 +35,13 @@ body {
   display: flex;
   align-items: center;
   border-radius: 100px;
+  text-align: center;
 }
 
 .message {
-  align-self: center;
+  line-height: 46px;
+  text-align: center;
+  min-height: 46px;
 }
 
 .platform-icon {
@@ -49,7 +52,6 @@ body {
 
 .div-btn div {
   flex: 1;
-  margin-bottom: 20px;
 }
 
 a {
