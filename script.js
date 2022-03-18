@@ -11,5 +11,5 @@ const LinkOnLoad = () => {
     //return "iOS";
   }
   //return "Other";
-  document.getElementById("facebook").href = "fb://page/109125357475042";
+  document.getElementById("facebook").href = "https://www.facebook.com/stylesunnieshop";
 };
