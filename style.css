@@ -6,13 +6,17 @@
 
 .container {
   width: 100%;
-  min-height: 100vh;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
 }
 
 body {
+  width: 100%;
+  min-height: 100vh;
   text-align: center;
   padding: 30px;
-  padding-top: 50px;
+  padding-top: 30%;
   background-color: bisque;
 }
 
