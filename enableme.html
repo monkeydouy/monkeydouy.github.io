@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content="30" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+
+    <title>Disabled Components</title>
+    <script>
+      var seconds = 30;
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        seconds = seconds - 1;
+        document.getElementById("countdown").innerHTML = seconds.toString();
+        if (seconds < 0) {
+          window.location.href = "/";
+        }
+      }, 1000);
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <br />
+
+      <h1>
+        Please enable me within :
+        <span id="countdown"></span>
+      </h1>
+      <hr />
+
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+            readonly
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Password"
+            readonly
+          />
+        </div>
+        <br />
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="exampleCheck1"
+            readonly
+          />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me</label
+          >
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary" disabled>Enable me</button>
+      </form>
+
+      <br />
+      <br />
+      <h3>Fieldset</h3>
+      <fieldset disabled>
+        <input type="text" value="enable me!!" /> : <input type="text" value="enable me!!" /> : <input type="text" value="enable me!!" />
+      </fieldset>
+      <br />
+      <fieldset disabled>
+        <input type="text" value="enable me!!" /> : <input type="text" value="enable me!!" /> : <input type="text" value="enable me!!" />
+      </fieldset>
+      <br />
+      <fieldset disabled>
+        <input type="text" value="enable me!!" /> : <input type="text" value="enable me!!" /> : <input type="text" value="enable me!!" />
+      </fieldset>
+      <br />
+      <fieldset disabled>
+        <input type="text" value="enable me!!" /> : <input type="text" value="enable me!!" /> : <input type="text" value="enable me!!" />
+      </fieldset>
+      <br />
+      <fieldset disabled>
+        <input type="text" value="enable me!!" /> : <input type="text" value="enable me!!" /> : <input type="text" value="enable me!!" />
+      </fieldset>
+      <br />
+      <fieldset disabled>
+        <input type="text" value="enable me!!" /> : <input type="text" value="enable me!!" /> : <input type="text" value="enable me!!" />
+      </fieldset>
+      <br />
+      <br />
+      <h3>Form</h3>
+      <form action="/action_page.php">
+        <input type="text" value="enable me!!" name="fname" disabled /> : <input type="text" value="enable me!!" name="lname" disabled />
+        <br />
+        <input type="text" value="enable me!!" name="fname" disabled /> : <input type="text" value="enable me!!" name="lname" disabled />
+        <br />
+        <input type="text" value="enable me!!" name="fname" disabled /> : <input type="text" value="enable me!!" name="lname" disabled />
+        <br />
+        <input type="text" value="enable me!!" name="fname" disabled /> : <input type="text" value="enable me!!" name="lname" disabled />
+
+        <br />
+        <br />
+        <br />
+      <h3>Button</h3>
+      <button type="button" disabled>Click Me!</button>
+
+      <br />
+      <br />
+      <br />
+      <h3>Select</h3>
+      <select>
+        <optgroup label="Enable me #1" disabled>
+          <option value="Enable me #2">Enable me #2</option>
+          <option value="Enable me #3">Enable me #3</option>
+        </optgroup>
+      </select> : 
+      <select>
+        <option value="Enable me #1" disabled>Enable me #1</option>
+        <option value="Enable me #2" disabled>Enable me #2</option>
+        <option value="Enable me #3" disabled>Enable me #3</option>
+        <option value="Enable me #4" disabled>Enable me #4</option>
+      </select> : 
+      <select disabled>
+        <option value="Enable me #1">Enable me #1</option>
+        <option value="Enable me #2">Enable me #2</option>
+        <option value="Enable me #3">Enable me #3</option>
+        <option value="Enable me #4">Enable me #4</option>
+      </select>
+
+      <br />
+      <br />
+      <br />
+      <h3>Textarea</h3>
+      <textarea disabled>Enable me</textarea>
+
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
